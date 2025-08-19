@@ -30,12 +30,8 @@ The database consists of **dimension tables** (`dim_customer`, `dim_product`) an
 - Total gross sales across months & years from `fact_sales_monthly`.  
 - Channel-wise contribution of gross sales using:  
   ```sql
-  SELECT channel, 
-         ROUND(SUM(gross_price * sales_quantity) / 
-               SUM(SUM(gross_price * sales_quantity)) OVER() * 100, 2) AS contribution_percentage
-  FROM fact_sales_monthly f
-  JOIN fact_gross_price g ON f.product_id = g.product_id
-  GROUP BY channel;
+
+
 🔹 03_channel_analysis.sql
 Identified which channel contributed the most sales in FY2021.
 
