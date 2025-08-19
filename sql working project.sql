@@ -100,7 +100,7 @@ and d.fiscal_year=2021 and c.market ='india')
 select  customer_code,customer,pre_invoice_discount_pct from mycte_1
 where row_num <=5;
 
---Q8. Get the complete report of the Gross sales amount for the customer  “Atliq Exclusive”  for each year  .  
+--Q8. Get the complete report of the Gross sales amount for the customer  â€œAtliq Exclusiveâ€  for each year  .  
               ---This analysis helps to  get an idea of low and 
                --high-performing months and take strategic decisions. 
                --The final report contains these columns:  
